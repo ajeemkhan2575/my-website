@@ -1,0 +1,693 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: #172033;
+
+    background: #f5f7fb;
+}
+
+
+a {
+    text-decoration: none;
+
+    color: inherit;
+}
+
+
+/* =========================
+   LOGIN PAGE
+========================= */
+
+.login-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e8f0ff,
+            #f9fbff
+        );
+}
+
+
+.login-card {
+
+    width: 100%;
+
+    max-width: 420px;
+
+    background: white;
+
+    padding: 42px;
+
+    border-radius: 22px;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 60px
+        rgba(30, 50, 90, .13);
+}
+
+
+.logo {
+
+    width: 72px;
+
+    height: 62px;
+
+    display: grid;
+
+    place-items: center;
+
+    margin:
+        0 auto 20px;
+
+    border-radius: 16px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-weight: bold;
+
+    font-size: 21px;
+}
+
+
+.login-card h1 {
+
+    margin-bottom: 8px;
+
+}
+
+
+.login-card > p {
+
+    color: #68758a;
+
+    margin-bottom: 25px;
+
+}
+
+
+.login-card label {
+
+    display: block;
+
+    text-align: left;
+
+    margin-bottom: 7px;
+
+    font-weight: 600;
+}
+
+
+.login-card input {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border:
+        1px solid #d5dce8;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    margin-bottom: 12px;
+}
+
+
+.login-card input:focus {
+
+    border-color: #2563eb;
+
+}
+
+
+.login-card button {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: 0;
+
+    border-radius: 10px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+.login-card button:hover {
+
+    background: #1d4ed8;
+
+}
+
+
+.error {
+
+    color: #dc2626 !important;
+
+    margin: 12px 0 !important;
+
+    min-height: 20px;
+}
+
+
+.demo {
+
+    font-size: 13px;
+
+    margin: 0 !important;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+
+    min-height: 72px;
+
+    background: white;
+
+    padding: 0 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    box-shadow:
+        0 2px 14px
+        rgba(20, 35, 60, .07);
+}
+
+
+.brand {
+
+    font-weight: 800;
+
+    font-size: 21px;
+}
+
+
+.navbar nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+.navbar nav a {
+
+    color: #526075;
+}
+
+
+.logout {
+
+    border: 0;
+
+    border-radius: 8px;
+
+    padding: 9px 15px;
+
+    background: #ef4444;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    text-align: center;
+
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    padding:
+        75px 20px 35px;
+}
+
+
+.eyebrow {
+
+    color: #2563eb;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+
+.hero h1 {
+
+    font-size:
+        clamp(32px, 5vw, 50px);
+
+    margin-bottom: 12px;
+}
+
+
+.hero p:last-child {
+
+    color: #68758a;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+
+    min-height: 430px;
+
+    padding:
+        25px 7% 80px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 28px;
+
+    flex-wrap: wrap;
+}
+
+
+.card {
+
+    width: 310px;
+
+    overflow: hidden;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 12px 35px
+        rgba(25, 40, 70, .09);
+
+    transition:
+        transform .25s,
+        box-shadow .25s;
+}
+
+
+.card:hover {
+
+    transform:
+        translateY(-9px);
+
+    box-shadow:
+        0 20px 45px
+        rgba(25, 40, 70, .15);
+}
+
+
+.card-image {
+
+    height: 190px;
+
+    padding: 25px;
+
+    display: grid;
+
+    place-items: center;
+}
+
+
+.card-image img {
+
+    width: 125px;
+
+    height: 125px;
+}
+
+
+.work-bg {
+
+    background: #e8f0ff;
+}
+
+
+.document-bg {
+
+    background: #eaf9ef;
+}
+
+
+.social-bg {
+
+    background: #fff5d9;
+}
+
+
+.card-body {
+
+    padding: 22px;
+}
+
+
+.card-body h2 {
+
+    margin-bottom: 9px;
+}
+
+
+.card-body p {
+
+    color: #68758a;
+
+    line-height: 1.6;
+
+    min-height: 52px;
+}
+
+
+.card-body span {
+
+    display: inline-block;
+
+    margin-top: 18px;
+
+    color: #2563eb;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   INNER PAGES
+========================= */
+
+.inner-page {
+
+    width: 86%;
+
+    max-width: 1100px;
+
+    margin:
+        45px auto 80px;
+}
+
+
+.back {
+
+    display: inline-block;
+
+    color: #2563eb;
+
+    font-weight: 700;
+
+    margin-bottom: 30px;
+}
+
+
+.page-header {
+
+    background: white;
+
+    padding: 38px;
+
+    border-radius: 18px;
+
+    margin-bottom: 25px;
+}
+
+
+.page-header h1 {
+
+    font-size: 40px;
+
+    margin-bottom: 12px;
+}
+
+
+.page-header > p:last-child {
+
+    color: #68758a;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   INFO BOXES
+========================= */
+
+.info-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.info-box {
+
+    background: white;
+
+    padding: 28px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 7px 25px
+        rgba(25, 40, 70, .06);
+}
+
+
+.info-box h2 {
+
+    margin-bottom: 10px;
+}
+
+
+.info-box p {
+
+    color: #68758a;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   SOCIAL MEDIA
+========================= */
+
+.social-list {
+
+    display: grid;
+
+    gap: 14px;
+}
+
+
+.social-link {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px 20px;
+
+    background: white;
+
+    border-radius: 13px;
+
+    box-shadow:
+        0 7px 20px
+        rgba(25, 40, 70, .06);
+
+    font-weight: 700;
+}
+
+
+.social-link span {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 10px;
+
+    background: #eef3ff;
+
+    color: #2563eb;
+}
+
+
+.social-link b {
+
+    margin-left: auto;
+
+    color: #2563eb;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    text-align: center;
+
+    color: #7b8799;
+
+    padding: 25px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+
+        padding: 0 5%;
+    }
+
+
+    .navbar nav a {
+
+        display: none;
+    }
+
+
+    .cards {
+
+        padding-left: 5%;
+
+        padding-right: 5%;
+    }
+
+
+    .info-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .inner-page {
+
+        width: 90%;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .login-card {
+
+        padding:
+            30px 22px;
+    }
+
+
+    .hero {
+
+        padding-top: 50px;
+    }
+
+
+    .card {
+
+        width: 100%;
+    }
+
+
+    .page-header {
+
+        padding: 28px;
+    }
+
+}
+#image{
+display: flex;
+align-items: center;
+gap: 10px;
+
+
+}
+#dp{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 0px;
+    margin: 0px;
+}
